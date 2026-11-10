@@ -72,23 +72,9 @@
               "description": "Веб-браузер покупця",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "providesAuthentication": false,
-              "threats": [
-                {
-                  "id": "b1b2c3d4-0005-4000-8000-000000000005",
-                  "title": "Підміна особи користувача (Credential stuffing)",
-                  "status": "Open",
-                  "severity": "High",
-                  "type": "Spoofing",
-                  "description": "Зловмисник використовує викрадені або підібрані облікові дані, щоб видати себе за легітимного покупця.",
-                  "mitigation": "Багатофакторна аутентифікація (MFA), обмеження кількості спроб входу (rate limiting), CAPTCHA, перевірка паролів за базами скомпрометованих облікових даних.",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 5,
-                  "score": ""
-                }
-              ]
+              "threats": []
             }
           },
           {
@@ -298,26 +284,12 @@
               "description": "Виклики API платіжного шлюзу",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "isBidirectional": false,
               "isEncrypted": true,
               "isPublicNetwork": true,
               "protocol": "HTTPS",
-              "threats": [
-                {
-                  "id": "b1b2c3d4-0004-4000-8000-000000000004",
-                  "title": "Відмова в обслуговуванні під час Чорної П'ятниці",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Denial of service",
-                  "description": "Різке зростання навантаження або DDoS-атака під час розпродажів робить платіжний шлюз або виклики до нього недоступними, що блокує оплату замовлень.",
-                  "mitigation": "Rate limiting, черги повідомлень та retry з backoff, автомасштабування, CDN/DDoS-захист, резервний платіжний провайдер, таймаути та circuit breaker.",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 4,
-                  "score": ""
-                }
-              ]
+              "threats": []
             }
           }
         ]
@@ -325,6 +297,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 5
+    "threatTop": 3
   }
 }
